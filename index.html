@@ -24,7 +24,7 @@
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-theme="uncover" style="--theme:uncover;">
 <h1>Slides</h1>
-<p>Link: <a href="https://swarnimarun.github.io/rust-perf-101">swarnimarun.github.com/rust-perf-101</a></p>
+<p>Link: <a href="https://swarnimarun.github.io/rust-perf-101">swarnimarun.github.io/rust-perf-101</a></p>
 <p><img src="./qrcode.png" alt="qr-code-to-the-above-url" /></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-theme="uncover" style="--theme:uncover;">
@@ -72,9 +72,9 @@
     <span class="hljs-keyword">let</span> <span class="hljs-variable">s2</span> = <span class="hljs-type">String</span>::<span class="hljs-title function_ invoke__">from</span>(<span class="hljs-string">&quot;smallstring&quot;</span>);
 
     <span class="hljs-comment">// so which one is faster?</span>
-    <span class="hljs-comment">// or moving</span>
+    <span class="hljs-comment">// the better code</span>
     <span class="hljs-keyword">let</span> <span class="hljs-variable">s3</span>: <span class="hljs-type">String</span> = [s1, s2].<span class="hljs-title function_ invoke__">concat</span>();
-    <span class="hljs-comment">// mutating the root</span>
+    <span class="hljs-comment">// or this code?</span>
     <span class="hljs-keyword">let</span> <span class="hljs-variable">s3</span>: <span class="hljs-type">String</span> = {
         <span class="hljs-keyword">let</span> <span class="hljs-keyword">mut </span><span class="hljs-variable">s1</span> = s1;
         s1.<span class="hljs-title function_ invoke__">push_str</span>(&amp;s2);

@@ -88,9 +88,9 @@ fn main() {
     let s2 = String::from("smallstring");
 
     // so which one is faster?
-    // or moving
+    // the better code
     let s3: String = [s1, s2].concat();
-    // mutating the root
+    // or this code?
     let s3: String = {
         let mut s1 = s1;
         s1.push_str(&s2);
