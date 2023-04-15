@@ -21,7 +21,7 @@ theme: uncover
 
 # Slides
 
-Link: [swarnimarun.github.com/rust-perf-101](https://swarnimarun.github.io/rust-perf-101)
+Link: [swarnimarun.github.io/rust-perf-101](https://swarnimarun.github.io/rust-perf-101)
 
 ![qr-code-to-the-above-url](./qrcode.png)
 
